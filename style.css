@@ -1,4 +1,6 @@
-.heading{
+h1{
+    display: block;
     text-align: center;
+    width: 100%;
     font-size: 3rem;
 }
