@@ -1,7 +1,27 @@
+*{
+    margin: 10px;
+    background-color: rgb(238, 238, 238);
+}
 .head{
     text-align: center;
 }
 
 .icons{
     text-decoration: none;
+}
+.table{
+    display: flex;
+    flex: 1;
+}
+.item{
+    justify-content: center;
+    position: relative;
+    border: 1px black solid;
+    transition: 0.5s;
+}
+.item:hover{
+    transform: scale(1.1);
+}
+.title{
+    text-align: center;
 }
