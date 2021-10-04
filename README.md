@@ -25,3 +25,20 @@ You can refer to the following articles on **_basics of Git and Github and also 
 - Fork the Repo and create a Branch for any Issue that you are working upon.
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this Script is all about.
+
+<h1 align=center> Project Admin ❤️ </h1>
+
+
+  <div align="center">
+<table>
+<tr>
+
+<td align="center"><a href="https://github.com/Subhradeep10"><img src="https://avatars.githubusercontent.com/u/70656957?v=4" width=100px height=100px /></a></br> <h4 style="color:white;">Ayan Gupta</h4>
+
+     
+</tr>
+</table>
+<br>
+
+
+</div>
