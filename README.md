@@ -45,7 +45,7 @@ You can refer to the following articles on **_basics of Git and Github and also 
 
   <div align="center">
 
-<table border = "2px solid black">
+<table border = "solid black">
 	<tr>
 		<td>
 			<a href="https://github.com/Subhradeep10/Amazing_Web_Projects/graphs/contributors">
