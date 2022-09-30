@@ -1,4 +1,13 @@
-![Amazing_Web_Projects](https://socialify.git.ci/Subhradeep10/Amazing_Web_Projects/image?description=1&descriptionEditable=A%20Curated%20Collection%20where%20you%20will%20get%20Several%20Web%20Development%20Projects%20%F0%9F%8C%8F%0A%F0%9F%9A%80&font=Raleway&forks=1&issues=1&language=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
+# Amazing Web Projects
+
+![](banner.png)
+
+## About
+
+The main objective of this repository is to support both novice and seasoned contributors to open source programming. The repository contains a considerable number of web projects that are beginner-friendly and can be used as a starting point for your open source journey.
+
+<br>
+
 <h2 align= center> 🚀 Tech Stacks used  </h2>
 <p align= center>
 <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
@@ -8,7 +17,7 @@
 </a> <a href="https://getbootstrap.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a>
 </p>
 
-<h2 align=center> 👨🏻‍💻 How to get started? </h2> 
+<h2 align=center> 👨🏻‍💻 How to get started? </h2>
 
 You can refer to the following articles on **_basics of Git and Github and also contact the Project Mentors, in case you are stuck_**:
 
@@ -17,8 +26,7 @@ You can refer to the following articles on **_basics of Git and Github and also 
 - [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
 - [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
 
-
-<h2 align=center> 📝 How to Contribute? </h2>  
+<h2 align=center> 📝 How to Contribute? </h2>
 
 - Take a look at the Existing Issues or create your own Issues!
 - Wait for the Issue to be assigned to you after which you can start working on it.
@@ -28,20 +36,17 @@ You can refer to the following articles on **_basics of Git and Github and also 
 
 <h2 align=center> Project Admin ❤️ </h2>
 
-
   <div align="center">
 <table>
 <tr>
 
 <td align="center"><a href="https://github.com/Subhradeep10"><img src="https://avatars.githubusercontent.com/u/70656957?v=4" width=125px height=125px /></a><h3 style="color:white;">Subhradeep Samanta</h3>
 
-     
 </tr>
 </table>
 <br>
 
 <h2 align=center> Contruibuters 🚀</h2>
-
 
   <div align="center">
 
@@ -56,8 +61,6 @@ You can refer to the following articles on **_basics of Git and Github and also 
 	</tr>
 </table>
 
-     
 <br>
-
 
 </div>
