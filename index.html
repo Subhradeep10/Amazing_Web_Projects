@@ -1,37 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Application</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image" href="img/Favicon.png">
-    <title>Amazing Web Projects</title>
-    <!-- CSS only -->
 </head>
-
 <body>
-
-    <h1 class="head"> AMAZING WEB PROJECTS</h1>
-
-    <div class="table">
-        <div class="item">
-            <div class="image">
-                <a href="./Button Counter/index.html" class="icons">
-                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61v5WLKivlL.png" width="100px"
-                        height="100px">
-                </a>
-            </div>
-            <div class="title">
-                Button Counter
-            </div>
-        </div>
+    <h1>Drawing App</h1>
+    <canvas id="canvas" width="900" height="800"></canvas>
+    <div id="toolbox">
+        <button id="decrease">-</button>
+        <span id="size">30</span>
+        <button id="increase">+</button>
+        <input type="color" id="color">
+        <button id="clear">💩</button>
     </div>
-
-
-
-
+    <script src="script.js"></script>
 </body>
-
 </html>
