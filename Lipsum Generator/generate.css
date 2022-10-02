@@ -1,0 +1,73 @@
+body
+{
+    background-color: aqua;
+}
+.heading-text
+{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color:brown;
+    font-weight: lighter;
+    margin-top:5vh;
+    /* background-color: aqua; */
+    height: 10vh;
+}
+.lorem-text
+{
+   color:red;
+   text-align: center;
+   font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+.text-container{
+   color:brown;
+   width:35vw;
+   height:40vh;
+   /* overflow-y: scroll; */
+   background-color:yellow;
+   margin: 0 auto;
+}
+.generate
+{
+border-radius: 4px;
+background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+border: none;
+color: #FFFFFF;
+text-align: center;
+text-transform: uppercase;
+font-size: 22px;
+padding: 20px;
+width: 25vw;
+cursor: pointer;
+margin: 5px;
+}
+.buttons
+{
+   text-align: center;
+}
+.copy-content
+{
+   width:10vw;
+   height:8vh
+}
+.content{
+   width:35vw;
+   height:40vh;
+   overflow-y: scroll;
+   resize: none;
+   overflow-x: hidden;
+   background-color: yellow;
+   border-radius: 5px;
+}
+.thanks
+{
+   text-align: center;
+}
+
+.thanks-giving
+{
+   color:darkred;
+   margin-top: 10vh;
+   /* background-color: rgb(131, 9, 212); */
+}
