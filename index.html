@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drawing Application</title>
-    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style.css">
+    <title>Hex Colors</title>
+
 </head>
 <body>
-    <h1>Drawing App</h1>
-    <canvas id="canvas" width="900" height="800"></canvas>
-    <div id="toolbox">
-        <button id="decrease">-</button>
-        <span id="size">30</span>
-        <button id="increase">+</button>
-        <input type="color" id="color">
-        <button id="clear">💩</button>
+    <div class="container">
+        <div id="hex-colors">
+            <h1>Click the button bellow to generate a random gradient hex color combination</h1>
+            <h2>Background: linear gradient to right #<span id="hexcode1">ffffff</span>, #<span id="hexcode2">ffffff</span></h2>
+            <button id="submit" class="btn btn-light">Click Me</button>
+        </div>
     </div>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

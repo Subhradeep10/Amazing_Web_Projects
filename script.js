@@ -1,74 +1,16 @@
-const canvas = document.getElementById("canvas")
-const increasebtn = document.getElementById("increase")
-const decreasebtn = document.getElementById("decrease")
-const sizeEl = document.getElementById("size")
-const colorEl = document.getElementById("color")
-const clearEl = document.getElementById("clear")
-const ctx = canvas.getContext("2d")
+document.querySelector('#submit').addEventListener('click',()=>{
+    var hex_numbers = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
+    var hexcode1 = ''
+    var hexcode2 = ''
+    let random_index = 0
+    for(var i=0;i<6;i++){
+        random_index = Math.floor(Math.random()*hex_numbers.length);
+        hexcode1 += hex_numbers[random_index]; 
+        random_index = Math.floor(Math.random()*hex_numbers.length);
+        hexcode2 += hex_numbers[random_index]; 
 
-let size = 30;
-let isPressed = false
-let color = "black"
-let x = undefined
-let y = undefined
-
-canvas.addEventListener("mousedown", (e)=>{
-    isPressed = true
-    x = e.offsetX
-    y = e.offsetY
-})
-canvas.addEventListener("mouseup", (e)=>{
-    isPressed = false
-    x = undefined
-    y = undefined
-})
-canvas.addEventListener("mousemove",(e)=>{
-    if(isPressed){
-        const x2 = e.offsetX
-        const y2 = e.offsetY
-        
-        drawCircle(x2,y2)
-        drawLine(x,y,x2,y2)
-        x = x2
-        y = y2
     }
+    document.body.style.background = `linear-gradient(to right, #${hexcode1}, #${hexcode2})`;
+    document.querySelector('#hexcode1').textContent = hexcode1;
+    document.querySelector('#hexcode2').textContent = hexcode2;
 })
-function drawCircle(x,y){
-    ctx.beginPath()
-    ctx.arc(x,y,size,0,Math.PI*2);
-    ctx.fillStyle = color;
-    ctx.fill();
-}
-function drawLine(x1,y1,x2,y2){
-    ctx.beginPath()
-    ctx.moveTo(x1,y1)
-    ctx.lineTo(x2,y2)
-    ctx.strokeStyle = color
-    ctx.lineWidth = size*2
-    ctx.stroke()
-}
-increasebtn.addEventListener("click",(e)=>{
-    size +=5
-    if(size>50){
-
-        size = 50
-    }
-    updateSizeOnScreen();
-})
-decreasebtn.addEventListener("click",(e)=>{
-    size -= 5
-    if(size<5){
-        size = 5
-    }
-    updateSizeOnScreen();
-})
-colorEl.addEventListener("change",(e)=>{
-    color = e.target.value;
-
-})
-clearEl.addEventListener("click",()=>{
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-})
-function updateSizeOnScreen(){
-    sizeEl.innerText = size;
-}
