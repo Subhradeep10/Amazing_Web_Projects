@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex Colors</title>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+}
+#hex-colors{
+    width:100%;
+    text-align: center;
+}
+#hex-colors h1,h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    -moz-animation: colorchange  5s infinite alternate;
+    -o-animation: colorchange 5s infinite alternate;
+    -ms-animation: colorchange 5s infinite alternate;
+    animation: colorchange 5s infinite alternate;
+}
+#hex-colors h2{
+    text-transform: lowercase;
+    margin-top: 15%;
+}
+@-moz-keyframes colorchange{
+    0%{
+        color: #ffffff;
+    }
+    20%{
+        color: #cccccc;
+    }
+    40%{
+        color: #aaaaaa;
+    }
+    80%{
+        color: #eeeeee;
+    }
+    100%{
+        color: #dddddd;
+    }
+}
+@-o-keyframes colorchange{
+    0%{
+        color: #ffffff;
+    }
+    20%{
+        color: #cccccc;
+    }
+    40%{
+        color: #aaaaaa;
+    }
+    80%{
+        color: #eeeeee;
+    }
+    100%{
+        color: #dddddd;
+    }
+}
+@-ms-keyframes colorchange{
+    0%{
+        color: #ffffff;
+    }
+    20%{
+        color: #cccccc;
+    }
+    40%{
+        color: #aaaaaa;
+    }
+    80%{
+        color: #eeeeee;
+    }
+    100%{
+        color: #dddddd;
+    }
+}
+@keyframes colorchange{
+    0%{
+        color: #ffffff;
+    }
+    20%{
+        color: #cccccc;
+    }
+    40%{
+        color: #aaaaaa;
+    }
+    80%{
+        color: #eeeeee;
+    }
+    100%{
+        color: #dddddd;
+    }
+}
+@media(max-width:480px){
+    #hex-colors h1{font-size: 1.5rem;}
+    
+    #hex-colors h2{font-size: 1.5rem;}
+  }
+  .btn{
+    border-radius: 5px;
+    box-shadow: 0 0  0 #fdaced;
+    color: white;
+    background-color: rgb(207, 120, 120);
+    margin-top: 8%;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  .btn:hover{
+    background-color: #fdaced;
+  }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div id="hex-colors">
+            <h1>Click the button bellow to generate a random gradient hex color combination</h1>
+            <h2>Background: linear gradient to right #<span id="hexcode1">ffffff</span>, #<span id="hexcode2">ffffff</span></h2>
+            <button id="submit" class="btn btn-light">Click Me</button>
+        </div>
+    </div>
+  <script src="script.js">
+    document.querySelector('#submit').addEventListener('click',()=>{
+    var hex_numbers = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
+    var hexcode1 = ''
+    var hexcode2 = ''
+    let random_index = 0
+    for(var i=0;i<6;i++){
+        random_index = Math.floor(Math.random()*hex_numbers.length);
+        hexcode1 += hex_numbers[random_index]; 
+        random_index = Math.floor(Math.random()*hex_numbers.length);
+        hexcode2 += hex_numbers[random_index]; 
+
+    }
+    document.body.style.background = `linear-gradient(to right, #${hexcode1}, #${hexcode2})`;
+    document.querySelector('#hexcode1').textContent = hexcode1;
+    document.querySelector('#hexcode2').textContent = hexcode2;
+})
+  </script>
+</body>
+</html>
