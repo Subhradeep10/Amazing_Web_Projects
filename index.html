@@ -4,152 +4,209 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hex Colors</title>
-<style>
-    *{
+   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+*{
     margin: 0;
     padding: 0;
 }
-body{
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.container{
-    width: 90%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+nav{
+    background-color: rgb(5, 5, 5);
+    color: rgb(174, 150, 197);
+    height: 64px;
+    font-size: 27px;
     display: flex;
-    margin: auto;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Roboto Mono', monospace;
 }
-#hex-colors{
-    width:100%;
-    text-align: center;
+nav ul{
+    list-style-type: none;
 }
-#hex-colors h1,h2{
-    text-transform: uppercase;
-    font-size: 2rem;
-    -moz-animation: colorchange  5s infinite alternate;
-    -o-animation: colorchange 5s infinite alternate;
-    -ms-animation: colorchange 5s infinite alternate;
-    animation: colorchange 5s infinite alternate;
+.gameContainer{
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
 }
-#hex-colors h2{
-    text-transform: lowercase;
-    margin-top: 15%;
+.Container{
+   display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat( 3, 10vw);
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
 }
-@-moz-keyframes colorchange{
-    0%{
-        color: #ffffff;
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(219, 199, 218);
+}
+.info{
+    font-size: 22px;
+}
+.gameinfo{
+    padding: 0 34px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+margin: 0 23px;
+padding: 6px 4px;
+background-color: rgb(235, 182, 226);
+border-radius: 6px 7px;
+cursor: pointer;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 17px;
+font-weight: lighter;
+}
+.line{
+    background-color: rgb(77, 15, 15);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width: 800px)
+{
+    .gameContainer{
+       flex-wrap: wrap;
     }
-    20%{
-        color: #cccccc;
+    .gameinfo{
+        margin-top: 34px;
     }
-    40%{
-        color: #aaaaaa;
+    .gameinfo h1{
+        font-size:2.5rem;
     }
-    80%{
-        color: #eeeeee;
-    }
-    100%{
-        color: #dddddd;
+    .Container{
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
     }
 }
-@-o-keyframes colorchange{
-    0%{
-        color: #ffffff;
-    }
-    20%{
-        color: #cccccc;
-    }
-    40%{
-        color: #aaaaaa;
-    }
-    80%{
-        color: #eeeeee;
-    }
-    100%{
-        color: #dddddd;
-    }
-}
-@-ms-keyframes colorchange{
-    0%{
-        color: #ffffff;
-    }
-    20%{
-        color: #cccccc;
-    }
-    40%{
-        color: #aaaaaa;
-    }
-    80%{
-        color: #eeeeee;
-    }
-    100%{
-        color: #dddddd;
-    }
-}
-@keyframes colorchange{
-    0%{
-        color: #ffffff;
-    }
-    20%{
-        color: #cccccc;
-    }
-    40%{
-        color: #aaaaaa;
-    }
-    80%{
-        color: #eeeeee;
-    }
-    100%{
-        color: #dddddd;
-    }
-}
-@media(max-width:480px){
-    #hex-colors h1{font-size: 1.5rem;}
-    
-    #hex-colors h2{font-size: 1.5rem;}
-  }
-  .btn{
-    border-radius: 5px;
-    box-shadow: 0 0  0 #fdaced;
-    color: white;
-    background-color: rgb(207, 120, 120);
-    margin-top: 8%;
-    padding: 5px;
-    font-size: 1rem;
-  }
-  .btn:hover{
-    background-color: #fdaced;
-  }
-</style>
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div id="hex-colors">
-            <h1>Click the button bellow to generate a random gradient hex color combination</h1>
-            <h2>Background: linear gradient to right #<span id="hexcode1">ffffff</span>, #<span id="hexcode2">ffffff</span></h2>
-            <button id="submit" class="btn btn-light">Click Me</button>
+        <nav>
+            <ul>
+                <li>
+                    MyTicTacToe.com
+                </li>
+            </ul>
+        </nav>
+        <div class="gameContainer">
+            <div class="Container">
+                <div class="line"></div>
+                <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
+                <div class="box bt-0"><span class="boxtext"></span></div>
+                <div class="box bt-0 br-0"><span class="boxtext"></span></div>
+                <div class="box bl-0"><span class="boxtext"></span></div>
+                <div class="box"><span class="boxtext"></span></div>
+                <div class="box br-0"><span class="boxtext"></span></div>
+                <div class="box bl-0 bb-0"><span class="boxtext"></span></div>
+                <div class="box bb-0"><span class="boxtext"></span></div>
+                <div class="box bb-0 br-0"><span class="boxtext"></span></div>
+            </div>
+            <div class="gameinfo">
+                <h1>Welcome to Tic Tac Toe</h1>
+                <div>
+                    <span class="info">Turn for X</span>
+                    <button id="reset">Reset</button>
+                </div>
+                <div class="imgbox">
+                    <img src="giphy.webp" alt="">
+                </div>
+            </div>
         </div>
-    </div>
-  <script src="script.js">
-    document.querySelector('#submit').addEventListener('click',()=>{
-    var hex_numbers = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
-    var hexcode1 = ''
-    var hexcode2 = ''
-    let random_index = 0
-    for(var i=0;i<6;i++){
-        random_index = Math.floor(Math.random()*hex_numbers.length);
-        hexcode1 += hex_numbers[random_index]; 
-        random_index = Math.floor(Math.random()*hex_numbers.length);
-        hexcode2 += hex_numbers[random_index]; 
+<script>
+    console.log('Welcome to Tic Tac Toe')
+let music = new Audio('music.mp3')
+let audioTurn = new Audio('turn.mp3')
+let gameover = new Audio('gameover.wav')
+let turn = "X"
+let isgameover = false;
 
-    }
-    document.body.style.background = `linear-gradient(to right, #${hexcode1}, #${hexcode2})`;
-    document.querySelector('#hexcode1').textContent = hexcode1;
-    document.querySelector('#hexcode2').textContent = hexcode2;
+// Function to change the turn 
+const changeTurn = () => {
+    return turn === "X" ? "0" : "X"
+}
+// Funtion to check for a  win  
+const checkWin = () => {
+    let boxtext = document.getElementsByClassName('boxtext');
+    let wins = [
+        [0, 1, 2, 5, 5, 0],
+        [3, 4, 5, 5, 15, 0],
+        [6, 7, 8, 5, 25, 0],
+        [0, 3, 6, -5, 5, 90],
+        [1, 4, 7, 5, 15, 90],
+        [2, 5, 8, 15, 15, 90],
+        [0, 4, 8, 5, 15, 45],
+        [2, 4, 6, 5, 15, 135],
+    ]
+    wins.forEach(e => {
+        if ((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== "")) {
+            document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won"
+            isgameover = true;
+            document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "200px"
+            document.querySelector(".line").style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`
+            document.querySelector(".line").style.width = "20vw";
+        }
+    })
+}
+// Game Logic  
+music.play();
+let boxes = document.getElementsByClassName("box");
+Array.from(boxes).forEach(element => {
+    let boxtext = element.querySelector('.boxtext');
+    element.addEventListener('click', () => {
+        if (boxtext.innerText === '') {
+            boxtext.innerText = turn;
+            turn = changeTurn();
+            audioTurn.play();
+            checkWin();
+            if (!isgameover) {
+                document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
+            }
+
+        }
+    })
 })
-  </script>
+// add onclicl listener to reset button
+reset.addEventListener('click', () => {
+    let boxtext = document.querySelectorAll('.boxtext');
+    Array.from(boxtext).forEach(element => {
+        element.innerText = ""
+    });
+    turn = "X";
+    isgameover = false
+    document.querySelector(".line").style.width = "0vw";
+    document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
+    document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
+})
+</script>
 </body>
 </html>
