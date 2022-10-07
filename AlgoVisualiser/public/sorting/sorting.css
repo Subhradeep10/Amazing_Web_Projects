@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin : 0;
+    padding: 0;
+}
+
+
+.navbar{
+    height:fit-content;
+    background-color: black;
+    font-size: x-large;
+}
+
+.navbar .container{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color:white;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.navbar label{
+    color:white;
+    font-weight: bold;
+}
+
+.navbar select{
+    border-radius: 10px;
+    width:200px
+}
+
+.navbar select option{
+    font-size:large;
+}
+
+.navbar range{
+    background-color:tomato
+}
+
+
+.navbar button{
+    border-radius: 20px;
+    width:300px;
+    height:50px;
+    font-weight: bolder;
+    font-size: x-large;
+    background-color: pink;
+    cursor: pointer;
+}
+
+
+
+#array-elems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

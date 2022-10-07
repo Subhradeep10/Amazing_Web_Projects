@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualiser</title>
+
+
+    <link rel="stylesheet" href="./sorting.css">
+</head>
+<body>
+    
+    <!-- Navbar Containing all the Controls -->
+    <nav class="navbar">
+        <div class="container">
+
+            <!-- Home Link -->
+            <a href="#">Sorting Visualiser</a>
+
+
+            <!-- Sorting Type -->
+            <div class="sub-container">
+                <label for="SortingType">Sorting Type</label>
+                <select name="SortingType" id="sorting-type">
+                    <option value="Bubble Sort">Bubble Sort</option>
+                    <!-- <option value="Insertion Sort">Insertion Sort</option> -->
+                </select>
+            </div>  
+
+            <!-- Sorting Array Size -->
+            <div class="sub-container">
+                <label for="ArraySize">Size of the Array</label>
+                <input type="range" name="ArraySize" id="array-size" min="5" >
+            </div>
+
+
+            <!-- Sorting Speed -->
+            <div class="sub-container">
+                <label for="SortingSpeed">Speed of Sorting</label>
+                <i></i>
+                <input type="range" name="SortingSpeed" id="sorting-speed" min="10" max="50">
+                <i></i>
+            </div>
+
+            <!-- Ultra Fast or Ultra Slow -->
+            <div class="sub-container">
+                <input type="radio" name="spl-speed" id="ultra-fast" value='ultraFast'>
+                <label for="spl-speed">Ultra Fast</label>
+                <input type="radio" name="spl-speed" id="ultra-slow" value = 'ultraSlow'>
+                <label for="spl-speed">Ultra Slow</label>
+            </div>
+
+            
+            <div class="sub-container">
+                <button id='start-sort'>Start Sorting</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main App Division -->
+    <div id="main-app">
+        <div id="array-elems">
+
+        </div>
+    </div>
+</body>
+
+<script src="./sorting.js"></script>
+</html>
