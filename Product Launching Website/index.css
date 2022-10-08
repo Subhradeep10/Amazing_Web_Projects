@@ -231,15 +231,39 @@ footer {
   line-height: 50px;
   color: white;
   background-color: #333;
-  text-align: center;
   overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items:center; */
  }
- footer span {
+ footer div {
   padding: 20px;
-  float: left;
-  text-align: center;
  }
  footer a {
    text-decoration:none;
    color: white;
+ }
+ .navbuttons{
+  display: flex;
+  flex-direction: row;
+ }
+ .social-icons{
+   font-size: 120%;
+   display: flex;
+ }
+ @media (max-width: 55em){
+   footer{
+    flex-direction: column;
+   }
+   footer div{
+    padding: 15px;
+   }
+   .navbuttons{
+    margin-bottom: 0;
+    padding-bottom: 0;
+   }
+   .social-icons{
+    margin-top: 0;
+    padding-top: 0;
+   }
  }
