@@ -1,0 +1,19 @@
+{
+  "name": "algovisualiser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test" : "nodemon index.js"
+  },
+  "keywords": [
+    "Algorithm Visualiser"
+  ],
+  "author": "Krishnendu Dasgupta",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2"
+  }
+}
