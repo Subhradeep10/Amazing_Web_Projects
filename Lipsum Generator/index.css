@@ -1,15 +1,13 @@
 body{
-    background-color: aqua;
+    background-color: rgb(169, 235, 169);
+    margin: 2%;
 }
 .heading-text
 {
     text-align: center;
-    font-family: 'Pacifico', cursive;
-    color:brown;
-    font-weight: lighter;
-    margin-top:5vh;
-    /* background-color: aqua; */
-    height: 10vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(30, 92, 23);
+    margin:5% auto 3% auto;
 }
 .about-img-1
 {
@@ -28,9 +26,9 @@ body{
    margin-left: 3.5vw;
 }
 .about-question,.why-used-question{
-color:rgb(172, 138, 76);
+color:#754b28;
 margin-left:5vw;
-font-family: 'Dancing Script', cursive;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .about-text,.why-used-text
@@ -40,7 +38,7 @@ font-family: 'Dancing Script', cursive;
    font-family: 'Dancing Script', cursive;
     font-family: 'Pacifico', cursive;
     font-family: 'Source Serif Pro', serif;
-    color:rgb(75, 118, 119)
+    color:rgb(26, 71, 72)
 }
 .generate-button
 {
@@ -48,14 +46,14 @@ font-family: 'Dancing Script', cursive;
 }
 .generate{
 border-radius: 4px;
-background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+background: linear-gradient(to right, #67b26b, #3387ae) !important;
 border: none;
 color: #FFFFFF;
 text-align: center;
 text-transform: uppercase;
 font-size: 22px;
 padding: 20px;
-width: 25vw;
+width: 25%;
 cursor: pointer;
 margin: 5px;
 }

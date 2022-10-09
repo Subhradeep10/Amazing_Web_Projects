@@ -1,20 +1,19 @@
 body
 {
-    background-color: aqua;
+    background-color: rgb(103, 237, 134);
 }
 .heading-text
 {
     text-align: center;
-    font-family: 'Pacifico', cursive;
-    color:brown;
-    font-weight: lighter;
-    margin-top:5vh;
-    /* background-color: aqua; */
-    height: 10vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(27, 108, 32);
+    font-weight: 500;
+    font-size: 300%;
+    margin: 4% auto 2% auto;
 }
 .lorem-text
 {
-   color:red;
+   color:rgb(101, 70, 10);
    text-align: center;
    font-family: 'Montserrat Alternates', sans-serif;
 
@@ -24,14 +23,12 @@ body
    color:brown;
    width:35vw;
    height:40vh;
-   /* overflow-y: scroll; */
-   background-color:yellow;
    margin: 0 auto;
 }
 .generate
 {
 border-radius: 4px;
-background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+background: linear-gradient(to right, #448748, #2a82ab) !important;
 border: none;
 color: #FFFFFF;
 text-align: center;
@@ -49,7 +46,7 @@ margin: 5px;
 .copy-content
 {
    width:10vw;
-   height:8vh
+   height:8vh;
 }
 .content{
    width:35vw;
@@ -57,7 +54,8 @@ margin: 5px;
    overflow-y: scroll;
    resize: none;
    overflow-x: hidden;
-   background-color: yellow;
+   border: none;
+   background-color: rgb(207, 233, 101);
    border-radius: 5px;
 }
 .thanks
@@ -67,7 +65,5 @@ margin: 5px;
 
 .thanks-giving
 {
-   color:darkred;
    margin-top: 10vh;
-   /* background-color: rgb(131, 9, 212); */
 }
