@@ -1,0 +1,131 @@
+#gameFrame {
+
+	background-color: black;
+	height: 600px;
+	width: 800px;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+    
+    background: url(background2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    cursor: crosshair;
+    
+}
+
+#healthBar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 100%;
+	background-color: coral;
+	transition: width .5s;
+ 
+}
+
+.enemy {
+	width: 180px;
+	height: 280px;
+	position: absolute;
+	background-color: beige;
+	bottom: -400px;
+	transition: all .5s; 
+    border-radius: 100%;
+    background:linear-gradient(rgb(126, 120, 120),rgb(35, 34, 34)) ;
+}
+
+.enemy.showing {
+	bottom: 0;
+}
+
+.enemy.shooting {
+	background-color: red;
+}
+
+
+#enemy1 { left: 5px; }
+#enemy2 { left: 165px; }
+#enemy3 { left: 325px; }
+#enemy4 { left: 485px; }
+#enemy5 { left: 645px; }
+
+
+.enemy.dead {
+	background-color: gray;
+	height: 50px;
+}
+
+.enemy::before{
+    content: "O_O";
+    position: absolute;
+    width: 100%;
+    top: 50 px;
+    font-size: 2em;
+    text-align: center;
+   
+}
+.enemy:after{
+    content:"o";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 5px;
+    bottom: 30px;
+    background-color: #222;
+    color: #555;
+    text-align:center;
+    border-radius: 15px;
+    border-bottom:20px solid #111;
+    border-right: 2px solid brown;
+    transition: all 0.2s;
+}
+
+
+.enemy.shooting{
+    background: #471515;
+}
+
+
+
+.enemy.shooting::after{
+    content: "*";
+    left:20px;
+    color: coral;
+    font-size : 4em;
+    transform : scale(2); 
+    box-shadow : 20px -10px 30px black;
+ }
+    
+
+ 
+.enemy.dead::before{
+    content:"*_*";
+    color: #555;
+}
+.enemy.dead::after{
+    background: #222;
+    transform: rotate(-90deg);
+    bottom: -140px;
+}
+
+
+
+
+
+
+
+button{
+   height: 100%;
+   width: 100%;
+   background-color: coral;
+
+   border: 0;
+   box-shadow: none;
+
+   font-size: 5em;
+   letter-spacing: -2px;
+   opacity: 0.5;
+
+}
