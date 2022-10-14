@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Outfit:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Dark-blue: #2d5468;
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+ 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  padding:14px;
+  background-color: var(--Cream);
+
+}
+
+.card {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin: auto;
+  width: 600px;
+  background-color: var(--White);
+  border:2px solid grey;
+  border-left: transparent;
+  border-top:transparent;
+  border-bottom: transparent;
+  border-bottom-right-radius: 0.8rem;
+  padding-right: 35px;
+  /* border-bottom-right-radius: 0.8rem; */
+}
+
+.card-content {
+  width: 80%;
+  padding-left: 1.4rem;
+}
+
+.card-content h4 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.4rem;
+  font-weight: 100;
+  font-size: 0.75rem;
+  margin-bottom: 2rem;
+  color: var(--Dark-grayish-blue);
+  text-transform: uppercase;
+}
+
+.card-content h1 {
+  display: inline-block;
+  font-size: 2.2rem;
+  color: var(--Very-dark-blue);
+  font-family: "Fraunces", serif;
+  line-height: 2.3rem;
+  margin-bottom: 1.3rem;
+}
+
+.card .product {
+  height: 500px;
+  object-fit: cover;
+  border:2px solid grey;
+  border-right: transparent;
+  border-bottom:transparent;
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+}
+
+.info {
+  font-family: "Montserrat", sans-serif;
+  padding: 1.5rem 0;
+  font-size: 14px;
+  font-weight: lighter;
+  color: var(--Dark-grayish-blue);
+  line-height: 1.4rem;
+ 
+}
+
+.price {
+  margin: 0.8rem 0;
+}
+.new-price {
+  display: inline;
+  color: var(--Dark-blue);
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+}
+.old-price {
+  display: inline;
+  padding: 5px;
+  color: var(--Dark-grayish-blue);
+}
+
+.checkout {
+  background: var(--Dark-blue);
+  color: var(--Cream);
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 0.8rem;
+  border: 0;
+  border-radius: 12px;
+}
+.rating .fa {
+  color: #ff523b;
+}
+.checkout img {
+  height: 20px;
+  width: 20px;
+}
+
+.checkout:hover {
+  background-color: var(--Very-dark-blue);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    background-color: hsl(30, 38%, 92%);
+    height: auto;
+  }
+
+  .card {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .card .product {
+    background: url(/Product-Description-Card/images/img1.PNG);
+    width: 60%;
+    height: 200px;
+    margin: 20px 12px;
+    border:2px solid var(--Dark-blue);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0%;
+  }
+}
