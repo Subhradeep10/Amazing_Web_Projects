@@ -1,0 +1,21 @@
+/*
+Import fonts here
+*/
+
+html,
+body {
+  height: 100vh;
+}
+#root {
+  height: 100%;
+}
+
+/* make the customizations */
+// $theme-colors: (
+//   "info": rgb(70, 185, 141),
+//   "danger": teal,
+// );
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "assets/scss/dashboard.scss";

@@ -1,0 +1,19 @@
+{
+  "sentiment": {
+    "analysis": {
+      "title": "تحليل المشاعر خلال فترة زمنية"
+    },
+    "overview": {
+      "title": "تحليل المشاعر"
+    }
+  },
+  "wordCloud": {
+    "title": "غيمة الأحرف"
+  },
+  "topSocialSources": {
+    "title": "أهم الروابط"
+  },
+  "topLinks": {
+    "title": "أهم الروابط"
+  }
+}
