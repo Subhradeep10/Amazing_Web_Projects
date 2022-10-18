@@ -33,7 +33,6 @@ for (item of buttons) {
         if(result.innerHTML == "Error") {
             result.innerHTML = '';
         }
-        
         switch(buttonInput) {
 
             case 'C':
@@ -49,7 +48,7 @@ for (item of buttons) {
                 
             case '=':
                 if(inputValue != '') {
-                    inputValue = eval(inputValue) + '';
+                    //inputValue = eval(inputValue) + '';
                     if(result.innerHTML != inputValue) {
                         input.innerHTML = result.innerHTML + "=";
                         result.innerHTML = eval(result.innerHTML) + '';
@@ -81,11 +80,11 @@ for (item of buttons) {
                 result.innerHTML = memory;
                 document.getElementById('memory').innerHTML = 'mr';
             break;
-
+           
             case '%':
                 inputValue += '/(100)';
                 result.innerHTML += '/(100)';
-            break;
+            break; 
 
             case '1/x':
                 input.innerHTML = '1/(' + result.innerHTML + ')=';
