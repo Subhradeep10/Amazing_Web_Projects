@@ -1,6 +1,6 @@
 # Amazing Web Projects
 
-![](banner.png)
+![image](https://user-images.githubusercontent.com/70656957/198924462-92f31ca6-595d-4959-bbee-200587ed23c4.png)
 
 ## About
 
